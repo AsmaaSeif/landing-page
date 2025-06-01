@@ -1,0 +1,16 @@
+@media((max-width: 576px)){
+        .header-title::before{
+          width: 39%;
+        }
+        .testmonial .header-title::before ,.contact .header-title::before{
+            width: 55%;
+           }
+         .client .header-title::before{
+            width: 48%;
+           }
+        .row{
+        margin-right: 0;
+        }
+          
+   
+}

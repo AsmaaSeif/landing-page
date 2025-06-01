@@ -1,0 +1,579 @@
+    /***********************start General style*****************************/
+body{
+  font-family: Poppins, sans-serif;
+}
+
+ h1, h2, h3, h4, h5, h6{
+   font-family: "Montserrat", sans-serif;
+}
+:root {
+  --main-color:#111;
+  --sec-color : #fff;
+  --bg-main:#F7F7F7;
+  --bg-sec:#FFFFFF;
+  --text-color:#748182;
+  --bs-btn-hover-bg :#00000000 ;
+  --title-color:#343434;
+  --icon-bg-color:#f4f4f4;
+  --icon-bg-hover:#1C1C1C;
+  --bs-nav-link-hover-color:#1C1C1C;
+  --bs-link-color-rgb : #fff;
+  --bs-carousel-indicator-active-bg:#869791;
+  
+  
+}
+.line-h{
+   line-height: 1.6;
+   }
+   a  {
+    color: var(--bs-link-color-rgb);
+    text-decoration: none;
+   }
+   .mb-15 {
+       margin-bottom: 15px;
+   }
+   .fw-600 {
+    font-weight: 600;
+   }
+   .bg-gray {
+    background-color: #5B5B5B;
+   }
+    .fw-700{
+    font-weight: 700;
+   }
+   .fs-13{
+    font-size: 13px;
+   }
+   
+
+   /***********************start scroll navbar*******************************/
+    
+    body:not(:has([href="#home"].active)) .fixed-top.navbar,
+    body:not(:has([href="#home"].active)) .navbar-nav .nav-link,
+    body:not(:has([href="#home"].active)) #logo-brand.navbar-brand.logo {
+      color: var(--main-color);
+      background-color: var(--bg-sec); 
+    }
+    body:has([href="#home"].active) .fixed-top.navbar{
+      position: absolute !important;
+    }
+     body:not(:has([href="#home"].active))  .nav-link.active span::after{
+      background-color: var(--main-color);
+    }
+     /***********************end scroll navbar*******************************/
+
+    /*****************start title***************/
+  .header-title {
+    color: var(--title-color);
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    z-index: 1;
+  }
+   .header-title::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--title-color);
+    position: absolute;
+    bottom: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.header-title::before{
+  content: "";
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+   width: 14%;
+   height: 30px;
+  bottom: -10px;
+  z-index: -1;
+}
+  .testmonial .header-title::before,
+  .client .header-title::before {
+   content: "";
+   width: 22%;
+   }
+   .client .header-title::before{
+    width: 20%;
+   }
+       /************* end title*************** /
+  /************************************end general style*************************** /
+
+  /*********************************************start nav bar*************************/
+   .logo {
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1;
+    color: var(--sec-color);
+   }
+   #logo-brand.navbar-brand.logo{
+    color: var(--sec-color);
+   }
+   nav#navbar-example2 {
+    cursor: pointer;
+   }
+   
+   .nav-space li {
+      margin: 8px 8px 0;
+    }
+    .nav-link span {
+      position: relative;
+    }
+    .navbar-nav .nav-link.active , .navbar-nav .nav-link{
+      color: var(--sec-color);
+    }
+    .nav-link.active span::after{
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: var(--bg-sec);
+      height: 2px;
+      width: 100%;
+    }
+    /*********************************************end nav bar*************************/
+
+   /********************************************* start header section*************************/
+      .bg-header{
+        background-image: linear-gradient(to right,rgba(0, 0, 0, 0.6),  rgba( 0 , 0 , 0 ,0.6)), url(../images/bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
+      h1 {
+        color: var(--sec-color);
+        font-size: 50px;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+      .animation{
+        font-size: 50px;
+        line-height: 72px;
+      }
+     
+      
+      
+      .bg-header li{
+        height: 30px;
+        width: 30px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius:50% ;
+        -webkit-border-radius:50% ;
+        -moz-border-radius:50% ;
+        -ms-border-radius:50% ;
+        -o-border-radius:50% ;
+        font-size: 12px;
+      }
+      
+    /********************************************* end header section*************************/
+
+    /********************************************* start about section*************************/
+           .about {
+                padding: 100px 0;
+           }
+           .about-img{
+            position: relative;
+            padding: 0 0 0 30px;
+           }
+          .about-img::after{
+          content: "";
+          width: 80%;
+          height: 80%;
+          position: absolute;
+          bottom: -30px;
+          left: 0;
+          background-image: url(../images/dots.png);
+          background-repeat: repeat;
+          z-index: -1;
+          
+          }
+          .fw-800 {
+            font-weight: 800;
+          }
+          .leter-space {
+            letter-spacing: 2px;
+          }
+          .ui-title{
+            color: var(--text-color);
+            margin-bottom: 20px;
+            font-size: 15px;
+
+          }
+          .p-content {
+            color: var(--text-color);
+          }
+          .strong-text{
+            color: #748182;
+          }
+         
+          .p-content{
+            
+            font-size: 15px;
+          }
+          .padding{
+            padding: 5px 10px;
+          }
+          .m-b-30 {
+            margin-bottom: 30px;
+          }
+          .m-t-30 {
+            margin-top: 30px;
+          }
+          .progress-content{
+          height: 27px;
+          background-color: #e0e0e0;
+          border-radius: 6px;
+          margin-bottom: 20px;
+          }
+          .progress-style  {
+            background-color: #1c1c1c;
+            font-weight:500;
+            padding: 0 10px;
+            color: white;
+          }
+          .progress-bar{
+            flex-direction: row;
+          }
+         .button  {
+          padding: 10px 30px;
+          font-size: 13px;
+          }
+          .cv-btn {
+           background-color: #1c1c1c;
+           border: 1px solid #1c1c1c ;
+           color: #FFFFFF;
+           transition: all 0.1s ;
+           -webkit-transition: all 0.1s ;
+           -moz-transition: all 0.1s ;
+           -ms-transition: all 0.1s ;
+           -o-transition: all 0.1s ;
+           }
+         .cv-btn:hover {
+          background-color: transparent ;
+          color: #1c1c1c;
+          border: 1px solid #1c1c1c;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+        }
+        .contact-btn {
+          border: 1px solid #1c1c1c;
+          transition: all 0.1s;
+          -webkit-transition: all 0.1s;
+          -moz-transition: all 0.1s;
+          -ms-transition: all 0.1s;
+          -o-transition: all 0.1s;
+           }
+         .contact-btn:hover {
+          border: 0;
+          background-color: #1c1c1c;
+          color: #fff;
+         }
+          .mt-20{
+            margin-top: 20px;
+          } 
+         
+      /********************************************* end about section*************************/
+             
+
+       /********************************************* start service section*************************/
+
+           .bg-section {
+            background-color: var(--bg-main);
+           }
+           .sub-title-service {
+            font-weight: 800;
+            font-size: 18px;
+             margin-bottom: 15px;
+           }
+          .serv-section {
+            background-color: var(--bg-sec);
+            padding: 50px 20px;
+            
+          }
+           .icon-service {
+            margin-bottom: 20px;
+            width: 70px;
+            height: 70px;
+            background-color: var(--icon-bg-color);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            }   
+           .hover-section{
+             transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+           }
+          .hover-section:hover .icon-service{
+            background-color: var(--icon-bg-hover);
+            color: var(--bg-sec);
+          }
+           .word-space {
+            word-spacing: 2px;
+           }
+          .service-p {
+            
+            font-size: 14px;
+            color: var(--text-color);
+          }
+        /********************************************* end service section*************************/
+
+        /*******************************************start portoflio section*** *************************/
+          
+          .item  {
+            margin-bottom: 50px;
+           
+          }
+
+            .nav-tabs {
+              border-bottom: 0;
+            }
+           .nav-tabs .nav-link {
+            border: none;
+           padding: 8px 16px;
+           color: black;
+
+           }
+            .nav-tabs .nav-link.active{
+              position: relative;
+              z-index: 1;
+            } 
+           .nav-tabs .nav-link.active::before{
+            content: "";
+             height: 2px;
+             width: 26px;
+             bottom: 0;
+             background:var(--main-color);
+             position: absolute;
+             z-index: -1;
+           }
+           .font-13{
+            font-size: 13px;
+           }
+           .fig-caption h4 {
+            font-size: 12px;
+            
+           }
+           .item:hover .fig-caption  {
+             opacity: 1;
+             background-color: rgba(255, 255, 255, 0.95);
+             transform: translateY(0);
+             -webkit-transform: translateY(0);
+             -moz-transform: translateY(0);
+             -ms-transform: translateY(0);
+             -o-transform: translateY(0);
+             }
+           .portoflio .fig-caption {
+             position: absolute;
+             top: 6px;
+             right: 16px;
+             left: 16px;
+             bottom:6px;
+             opacity: 0;
+             transition: all 0.5s ;
+             -webkit-transition: all 0.5s ;
+             -moz-transition: all 0.5s ;
+             -ms-transition: all 0.5s ;
+             -o-transition: all 0.5s ;
+             transform: translateY(100%);
+             -webkit-transform: translateY(100%);
+             -moz-transform: translateY(100%);
+             -ms-transform: translateY(100%);
+             -o-transform: translateY(100%);
+}
+           .circle-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #111;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+             }
+            .icon-portoflio {
+              color: var(--sec-color);
+            }
+            .circle-icon:hover {
+              background-color: var(--bg-sec);
+              color: var(--main-color);
+            }
+
+
+            /*******************************************end portoflio section*** *************************/
+
+           
+            /*******************************************start testmniol section*** *************************/
+           
+            .carousel-img {
+              width: 60px;
+              height: 60px;
+            }
+            .testmonial{
+              background-color: var(--bg-main);
+            }
+            .font-16 {
+              font-size: 16px;
+            }
+            .mb-30 {
+              margin-bottom: 30px;
+            }
+            #carouselExampleIndicators .carousel-indicators button{
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background-color: var(--bs-carousel-indicator-active-bg);
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+            }
+            #carouselExampleIndicators .carousel-indicators button.active{
+              cursor: pointer;
+            }
+            .font-30 {
+              font-size: 30px;
+            }
+            .counter-content h5 {
+              font-weight: 900;
+            }
+            .text-grey{
+              color: var(--text-color);
+            }
+            
+            /*******************************************end testmniol section*** *************************/
+
+
+             /******************************************* statr client section*** *************************/
+           
+           .client {
+            background-color: var(--bg-main);
+           }
+           .client-content {
+            color: var(--sec-color);
+            padding: 25px;
+           }
+           .icon-overlay {
+            top: 1%;
+            left: 1%;
+            right: 1%;
+            bottom: 22%;
+            background-color: rgba(255, 255, 255, 0.95);
+            opacity: 0;
+            transition: all  1s;
+           
+            }
+          .client li {
+             width: 30px;
+             height: 30px;
+             background-color: #111;
+             border-radius: 50%;
+             -webkit-border-radius: 50%;
+             -moz-border-radius: 50%;
+             -ms-border-radius: 50%;
+             -o-border-radius: 50%;
+             transition: all 0.2s ease;
+              color: var(--sec-color);
+            } 
+            
+            .client ul {
+             transform: rotateY(-180deg);
+            }
+            
+             .client-card {
+              transition: all 0.2s ease;
+              
+               }
+             .client-card:hover img {
+              transform:  scale(1.1) ;
+               }
+             .client-card:hover .icon-overlay{
+               transform: rotatey(180deg);
+               opacity: 1;
+               }
+               .icon-overlay ul li:hover{
+               background-color: var(--bg-sec);
+               color: var(--main-color);
+                border: 2px solid var(--main-color);
+               }
+              
+           /******************************************* end client section*** *************************/
+
+
+          /******************************************* sstart contact section*** *************************/
+           .contact .header-title::before{
+            content: "";
+            width: 22%;
+           }
+           .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #f4f4f4;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+              }
+           .contact-content:hover .contact-icon {
+            background-color: var(--main-color);
+            color: var(--sec-color);
+           }
+           .form-control:focus {
+            box-shadow:unset;
+
+           }
+           .form-button {
+            padding: 10px 40px;
+            background-color: var(--main-color);
+            color: var(--sec-color);
+            transition: all 0.2s ease;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -ms-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            }
+            
+           .form-button:hover {
+            background-color: transparent;
+            border: 1px solid #1C1C1C;
+            color: #000;
+           }
+           
+          /******************************************* end contact section*** *************************/
+
+           
+          /******************************************* start footer*** *************************/
+           footer {
+            background-color: var(--main-color);
+            color: #748182;
+            padding: 30px;
+           }
+ 
+          /******************************************* end footer*** *************************/
+
+          
